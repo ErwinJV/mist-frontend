@@ -1,0 +1,30 @@
+.mist-projects {
+  background-color: #00181e;
+
+  .title-section{
+
+     border-bottom: 2px solid #10d59f;
+     font-family: 'Inter', sans-serif;
+     font-size: 48px;
+    
+  }
+
+     .title-project{
+
+        font-family: 'Inter', sans-serif;
+        font-size: 48px;
+     }
+
+     .text-project{
+        font-family: 'Inter', sans-serif;
+        font-size: 26px;
+        font-weight: 400;
+        
+     }
+
+     .left-icon-mist{
+          left: 0;
+          top: -50px;
+          opacity: .1;
+     }
+}
