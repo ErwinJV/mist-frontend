@@ -32,40 +32,75 @@
     <title>MistSwap</title>
   </head>
   <body>
-    <!--=================
-            NAV
-    ====================-->
-    <div class="mist-nav mb-4 container-fluid">
-      <nav
-        class="container d-flex justify-content-between w-100 h-100 text-white fixed"
-      >
-        <ul class="nav align-self-center ms-3">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">
-              <div class="navbar-brand d-flex">
-                <span class="me-2 align-self-center"
-                  ><img src="assets/icons/logo-icon.webp" alt=""
-                /></span>
-                <span class="align-self-center"
-                  ><img src="assets/icons/logo-letter.webp" alt=""
-                /></span>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <div class="d-flex justify-content-center me-3">
-          <i class="bi bi-list text-white align-self-center fs-1"></i>
-        </div>
-      </nav>
-    </div>
-
     <!--===============================
        main-section-DESCRIPTION-PAGE
     ====================================-->
     <section
-      class="main-section d-flex container-fluid p-0 position-relative"
+      class="main-section d-flex flex-column container-fluid p-0 position-relative"
     >
-      <div class="main-background flex-column w-100 h-100">
+      <div class="container">
+        <!--NAV-->
+        <div class="mist-nav">
+          <nav
+            class="d-flex justify-content-between w-100 h-100 text-white fixed"
+          >
+            <ul class="nav align-self-center ms-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <div class="navbar-brand d-flex">
+                    <span class="me-2 align-self-center"
+                      ><img src="assets/icons/logo-icon.webp" alt=""
+                    /></span>
+                    <span class="align-self-center"
+                      ><img src="assets/icons/logo-letter.webp" alt=""
+                    /></span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="nav center-links me-5 justify-content-between">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Analytics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Misty Lake</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Documents</a>
+              </li>
+            </ul>
+
+            <div class="lang mt-5 d-flex justify-content-center me-3">
+              <div class="dropdown">
+                <button
+                  class="btn btn-outline-light dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="assets/icons/En-icon.webp" alt="" />
+                </button>
+                <ul
+                  class="dropdown-menu bg-transparent"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li class="d-flex justify-content-center">
+                    <img src="assets/icons/En-icon.webp" alt="" />
+                  </li>
+                  <li class="d-flex justify-content-center">
+                    <img src="assets/icons/En-icon.webp" alt="" />
+                  </li>
+                  <li class="d-flex justify-content-center">
+                    <img src="assets/icons/En-icon.webp" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
         <!--COIN-BOARD-->
         <div class="coin-board rounded-pill position-absolute bg-light">
           <ul class="w-100 h-100 d-flex rounded-pill s">
@@ -98,10 +133,19 @@
           </ul>
         </div>
 
+        <!--COIN FACTORY-->
+        <div class="coin-factory w-100 d-flex justify-content-center">
+          <img src="assets/img/coin-factory.webp" alt="" />
+        </div>
+
         <!--TITLE & SLOGAN-->
-        <div class="main-text flex-column text-white bg-transparent w-full">
-          <h1 class="mist-title text-center">MIST</h1>
-          <p class="mist-slogan mx-auto w-50 text-center">
+        <div
+          class="main-text mt-4 d-flex flex-column flex-md-row text-white bg-transparent w-full"
+        >
+          <h1 class="mist-title flex text-center fw-bolder">
+            Defi On Bitcoin Cash
+          </h1>
+          <p class="mist-slogan text-end">
             Trade, launch, stake, farm, invest, automate, build on the premier
             DeFi platform of smartBCH
           </p>
@@ -113,7 +157,9 @@
              PROJECTS
     ============================-->
 
-    <section class="mist-carousel projects text-white position-relative container-fluid">
+    <section
+      class="mist-carousel projects text-white position-relative container-fluid"
+    >
       <img
         src="./assets/icons/middle-mist-logo.webp"
         class="left-icon-mist position-absolute"
@@ -511,9 +557,13 @@
       ============================-->
 
     <div class="faq-section position-relative">
-      <img src="assets/icons/crecent-mist-icon.webp" class="crecent-mist-icon position-absolute" alt="icon-crecent-mist">
+      <img
+        src="assets/icons/crecent-mist-icon.webp"
+        class="crecent-mist-icon position-absolute"
+        alt="icon-crecent-mist"
+      />
       <div class="mx-project">
-        <div class="faq-text text-white text-center ">
+        <div class="faq-text text-white text-center">
           <h4 class="fw-bolder">Frequently asked questions</h4>
           <p class="fw-normal">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -579,23 +629,36 @@
       <div class="mx-project">
         <div class="row row-cols-1 row-cols-md-3">
           <div class="col mt-5">
-            <small class="text-white ">Copyright 2021 - All Right Reserved</small>
+            <small class="text-white"
+              >Copyright 2021 - All Right Reserved</small
+            >
           </div>
           <div class="col mt-5">
-            <div class="contact-app d-flex flex-column justify-content-center ">
+            <div class="contact-app d-flex flex-column justify-content-center">
               <div class="contact-icons d-flex justify-content-center">
-                <a href="#" class="me-3"><img src="assets/icons/telegram.webp" alt="" /></a>
-                <a href="#" class="me-3"><img src="assets/icons/twitter.webp" alt="" /></a>
-                <a href="#" class="me-3"><img src="assets/icons/discord.webp" alt="" /></a>
-                <a href="#" class="social-icon d-flex justify-content-center align-items-center rounded-circle" Docs><img src="assets/icons/social.webp" alt="" /></a>
+                <a href="#" class="me-3"
+                  ><img src="assets/icons/telegram.webp" alt=""
+                /></a>
+                <a href="#" class="me-3"
+                  ><img src="assets/icons/twitter.webp" alt=""
+                /></a>
+                <a href="#" class="me-3"
+                  ><img src="assets/icons/discord.webp" alt=""
+                /></a>
+                <a
+                  href="#"
+                  class="social-icon d-flex justify-content-center align-items-center rounded-circle"
+                  Docs
+                  ><img src="assets/icons/social.webp" alt=""
+                /></a>
               </div>
               <div class="contact-links text-center mt-3">
-                <a href="#" >Source code</a> <span>|</span> <a href="#">Docs</a>
+                <a href="#">Source code</a> <span>|</span> <a href="#">Docs</a>
               </div>
             </div>
           </div>
           <div class="col mt-5">
-            <div class="options-links  d-flex justify-content-between">
+            <div class="options-links d-flex justify-content-between">
               <a href="#">Analytics</a>
               <a href="#">Misty Lake</a>
               <a href="#">Enter App</a>
