@@ -1,4 +1,5 @@
 body {
+  background-color: black !important;
   font-family: 'Inter', sans-serif; }
 
 .bg-mist {
@@ -12,55 +13,52 @@ body {
   border-right: 2px solid  #e5e5ea; }
 
 .main-section {
-  height: 900px;
-  background: linear-gradient(to bottom, #00060c 24%, #001118 30%); }
-  .main-section .coin-factory img {
-    width: 517px;
-    height: 508;
-    margin-top: 7rem; }
-  .main-section .coin-board {
-    width: 966px;
-    height: 74px;
-    left: calc(50% - 483px);
-    top: 25% px; }
-    .main-section .coin-board ul {
-      padding: 10px 18px 10px 35px; }
-    .main-section .coin-board span {
-      font-size: 13px; }
-    .main-section .coin-board li {
-      list-style: none; }
-    .main-section .coin-board .desc-price {
-      font-size: 13px;
-      font-family: "Roboto", sans-serif;
-      color: #62d2a2; }
-    .main-section .coin-board .price-coin {
-      color: #00181e;
-      font-family: "Inter", sans-serif;
-      font-size: 23px;
-      font-weight: 900; }
-    .main-section .coin-board .btn-cool {
-      background-color: #62d2a2;
-      width: 155px;
-      height: 38px;
-      margin: 8px 0 8px 119px; }
-  .main-section .main-text h1 {
-    font-size: 44.5px; }
-  .main-section .main-text p {
-    font-size: 26px;
-    width: 60%; }
+  height: 738px;
+  background-color: red; }
+  .main-section .main-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 50px; }
+    .main-section .main-background .coin-board {
+      width: 966px;
+      height: 74px;
+      left: calc(50% - 483px);
+      top: -32px; }
+      .main-section .main-background .coin-board ul {
+        padding: 10px 18px 10px 35px; }
+      .main-section .main-background .coin-board span {
+        font-size: 13px; }
+      .main-section .main-background .coin-board li {
+        list-style: none; }
+      .main-section .main-background .coin-board .desc-price {
+        font-size: 13px;
+        font-family: "Roboto", sans-serif;
+        color: #62d2a2; }
+      .main-section .main-background .coin-board .price-coin {
+        color: #00181e;
+        font-family: "Inter", sans-serif;
+        font-size: 23px;
+        font-weight: 900; }
+      .main-section .main-background .coin-board .btn-cool {
+        background-color: #62d2a2;
+        width: 155px;
+        height: 38px;
+        margin: 8px 0 8px 119px; }
+    .main-section .main-background .main-text {
+      margin-top: 500px; }
+      .main-section .main-background .main-text .mist-title {
+        font-family: "Inter", sans-serif;
+        font-weight: 900;
+        font-size: 40px; }
+      .main-section .main-background .main-text .mist-slogan {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 26px; }
 
 .mist-nav {
-  background-color: transparent;
-  height: 170px;
-  width: 100%; }
-  .mist-nav .center-links {
-    margin-top: 4rem; }
-  .mist-nav .lang li {
-    width: 72px;
-    border-radius: 5px; }
-  .mist-nav .lang li:hover {
-    background-color: white;
-    cursor: pointer; }
+  height: 180px;
+  background-color: black; }
 
 .mist-carousel.projects {
   background-color: #001118; }
@@ -271,4 +269,4 @@ footer {
       border-radius: 50%;
       background-color: transparent; }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=style.css.map */
