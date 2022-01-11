@@ -16,7 +16,6 @@ body {
   height: 738px;
   background-color: #000000; }
   .main-section .main-background {
-    background-image: url("../assets/img/sparkle-universe.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -249,7 +248,7 @@ footer {
   footer .social-icon {
     width: 30px;
     height: 30px;
-    background: #10d59f; }
+    background: #07D6A0; }
   footer .options-links a {
     color: white;
     text-decoration: none;
